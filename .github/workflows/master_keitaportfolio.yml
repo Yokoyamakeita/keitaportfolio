@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'keitaportfolio'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CFCE5EFC0E914EAF92EBB0BB5947A88C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C2D722FFB28C44C6BAE943B342F4C697 }}
           package: .
