@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-style: 100%;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+.contact{
+    background: url(../img/contactbg.jpg);
+    min-height: 100vh;
+}
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(170, 228, 228);
+}
+
+.wrapper{
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+
+.logo{
+    width: 210px;
+    margin-left: 100px;
+}
+.main-nav{
+    display: flex;
+    font-size: 2rem;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 36px;
+    margin-top: 10px;
+}
+.main-nav a{
+    color: #fff;
+    font-family: 'Crimson Text', serif;
+}
+.main-nav a:hover{
+    color: rgb(228, 165, 212);
+}
+
+
+.content{
+    /* margin-bottom: 50px; */
+    background-color: antiquewhite;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.profile{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: aliceblue;
+    padding-bottom: 100px;
+}
+.profile h2{
+    font-size: 2.5rem;
+}
+.profile p{
+    font-style: italic;
+    font-size: 1.2rem;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.mypic{
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.border{
+    border: solid 1px rgb(114, 190, 187);
+}
+/* ---------------------------- */
+
+/* skill---------------------------- */
+.skill-ul{
+    list-style: none;
+    padding-top: 15px;
+}
+.skill-title{
+    font-size: 0.2em;
+    padding-top: 10px;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 2px solid rgb(129, 205, 211);
+}
+.skill-ul li{
+    font-style: italic;
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+/* ---------------------------- */
+
+/* blog---------------------------- */
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    margin-top: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    
+}
+
+.grid p{
+    font-style: italic;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+.big-box{
+    grid-column: 1;
+    grid-row: 1;
+    background: rgb(220, 241, 218);
+    border-radius: 10%;
+}
+
+.sub{
+    background: rgb(236, 202, 129);
+    border-radius: 10%;
+}
+.sub2{
+    background: rgb(148, 217, 230);
+    border-radius: 10%;
+}
+.blog-title{
+    font-size: 0.2em;
+    padding-top: 10px;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 2px solid rgb(129, 205, 211);
+}
+
+/* ---------------------------- */
+
+section{
+    background: rgba(238, 164, 226, 0.9);
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 10px;
+    border-radius: 10%;
+}
+form{
+    background: rgba(240, 198, 107, 0.5);
+    padding-left: 30px;
+    padding-top: 30px;
+    
+    border-radius: 10%;
+    
+}
+label{
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1.5em;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    background: rgba(255,255,255);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    max-width: 240px;
+}
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+    background: rgba(255,255,255);
+}
+input[type="submit"]{
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    background: #fff;
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    width: 300px;
+    padding: 18px 32px;
+}   
+.sns{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 70px;
+    text-align: center;
+}
+.sns img{
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+/* cherry------------------------- */
+.cherry-blossom-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* コンテナからはみ出した要素を隠す */
+  }
+.petal {
+    position: absolute;
+    background-color: #ffc0cb; /* 花びらの色 */
+    border-radius: 150% 0 150% 0;
+    animation: animate-petal 10s linear;
+  }
+  
+  .petal::after {
+    content: "";
+    position: absolute;
+    top: -14%;
+    left: -10%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffc0cb;
+    border-radius: 150% 0 150% 0;
+    transform: rotate(15deg);
+  }
+  
+  /* 花びらが降るアニメーション */
+  @keyframes animate-petal {
+    0% {
+      top: 0;
+      opacity: 0;
+      transform: rotate(0deg);
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      top: 100vh;
+      transform: rotate(3000deg);
+    }
+  }
+/* ---------------------------- */
