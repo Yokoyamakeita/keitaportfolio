@@ -2,13 +2,14 @@
 // セッションスタート
 session_start();
 
-$errrormessage = '';
+$error = '';
 
 
 // contact_mailから帰ってきたのか判定
 // そうだったら値を入れておきましょ
-if(!empty($_SESSION['errormessage'])){
-    $errrormessage = $_SESSION['errormessage'];
+if(!empty($_SESSION['error'])){
+    $error = $_SESSION['error'];
+    unset($_SESSION['error']);
 }
 
 
@@ -26,7 +27,7 @@ $html = $header . $body . $footer;
 
 // メッセージを置き換える
 // ###error### にOK or NG の判定を入れておく
-$html = str_replace('###error###',htmlspecialchars($errrormessage),$html);
+$html = str_replace('{{error}}',htmlspecialchars($error),$html);
 
 
 // 表示出力処理

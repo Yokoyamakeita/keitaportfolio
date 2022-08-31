@@ -71,6 +71,7 @@ a{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     text-align: center;
     background-color: aliceblue;
     padding-bottom: 100px;
@@ -242,6 +243,10 @@ input[type="submit"]{
     width: 100px;
     border-radius: 50%;
     margin-left: 10px;
+}
+
+p{
+    
 }
 
 
